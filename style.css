@@ -7,12 +7,12 @@
     margin: 0;
     padding: 0;
     font-family: 'Patua One', cursive;
-    
 }
 
 .navigation .nav-brand{
     font-size: 1.5rem;
     padding: 0.4rem 0;
+    text-align: left;
 }
 .navigation .list-non-bullet{
     list-style: none;
@@ -25,7 +25,7 @@
     text-align: right;
 }
 .link{
-    padding: 1rem;
+    padding: 0 1rem;
     text-decoration: none;
     font-size: 1.5rem;
 }
@@ -33,5 +33,39 @@
     width: 100%;
     height: 15vh;
     background-color: var(--primary-color);
+}
+
+.container{
+    text-align: center;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+footer{
+    bottom: 0;
+    width: 100%;
+    height: 17vh;
+    background-color:var(--primary-color);
+    bottom: 0;
+}
+.footer-header{
+    text-align: center;
+    padding:1rem;
+    font-size: 1.5rem;
+}
+.links{
+    display: block;
+    text-align: center;
+}
+.linkp{
+    text-decoration: none;
+    color: rgb(52, 84, 228);
+    padding: 0 1rem;
+}
+.linkp:hover{
+    color: black;
 }
 
