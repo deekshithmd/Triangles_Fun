@@ -29,6 +29,15 @@
     text-decoration: none;
     font-size: 1.5rem;
 }
+
+.link:hover{
+    color: white;
+}
+
+.navigation .link-active{
+    color: white;
+}
+
 .navigation{
     width: 100%;
     height: 15vh;
