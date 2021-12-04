@@ -1,29 +1,25 @@
-var side1=document.querySelector("first")
-var side2=document.querySelector("second")
-var side3=document.querySelector("third")
-var button=document.querySelector("#calculate-area")
+var sides=document.querySelectorAll(".input-side")
+var button=document.querySelector(".calculate")
 var output=document.querySelector(".output")
-console.log(side1.value)
-    console.log(side2.value)
-    console.log(side3.value)
 
-function calculateArea(e){
-    e.preventDefault();
+function calculateArea(){
 
-    var a=Number(side1.value)
-    var b=Number(side2.value)
-    var c=Number(side3.value)
+    //console.log(Number(sides[0].value),Number(sides[1].value),Number(sides[2].value))
 
-    console.log(a)
-    console.log(b)
-    console.log(b)
+    var a=Number(sides[0].value)
+    var b=Number(sides[1].value)
+    var c=Number(sides[2].value)
 
     if(a+b>c && b+c>a && a+c>b){
         var s=(a+b+c)/2
-        var area=Math.sqrt(s*(s-a)*(s-b)*(s-c)).toFixed(4)
-        console.log(area)
+        var area=Math.sqrt(s*(s-a)*(s-b)*(s-c)).toFixed(2)
+        //console.log(area)
     }
-    console.log("Done")
+    //console.log("Done")
+    if(area==undefined)
+        output.innerText="Please enter all 3 sides in correct format"
+    else
+        output.innerText="Area of triangle is "+area+" units"
 }
 
-button.addEventListener("submit",calculateArea)
+button.addEventListener("click",calculateArea)
