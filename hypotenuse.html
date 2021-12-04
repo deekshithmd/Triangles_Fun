@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/hypotenuse.css">
     <title>Fun with Triangles</title>
 </head>
 <body>
@@ -25,6 +26,17 @@
             </li>
         </ul>
     </nav>
-    <script src="app.js" type="text/javascript"></script>
+    <main class="container">
+            <h1>Calculate hypotenuse of the Triangle</h1>
+            <h3>Enter base of the Triangle</h3>
+            <input required type="number" class="input-side"><br>
+            <h3>Enter height of the Triangle</h3>
+            <input required type="number" class="input-side"><br>
+            <button class="calculate">Calculate hypotenuse</button>
+            <h1>Hypotenuse formula</h1>
+            <h2>√(base² + height²)</h2>
+            <div class="output"></div>
+    </main>
+    <script src="js/hypotenuse.js" type="text/javascript"></script>
 </body>
 </html>
