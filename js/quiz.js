@@ -1,6 +1,6 @@
-var quizForm=document.querySelector(".quiz-form")
-var button=document.querySelector(".submit")
-var output=document.querySelector(".output")
+const quizForm=document.querySelector(".quiz-form")
+const button=document.querySelector(".submit")
+const output=document.querySelector(".output")
 
 const correctAnswers=[
     "90",
@@ -10,16 +10,16 @@ const correctAnswers=[
     "100"
 ]
 
-function checkScore(){
-    var score=0
-    var i=0
+const checkScore = () =>{
+    let score=0
+    let i=0
     const formResults = new FormData(quizForm);
-    for(var ans of formResults.values()){
-        if(ans==correctAnswers[i])
-            score=score+1
-        i=i+1
+    for(let ans of formResults.values()){
+        if(ans===correctAnswers[i])
+            score+=1
+        i+=1
     }
-    output.innerText="Your score is "+score
+    output.innerText=`Your score is ${score}`
 }
 
 button.addEventListener("click",checkScore)
